@@ -29,6 +29,8 @@ This project analyzes factors influencing student career success and predicts ex
 - Linear Regression
 - Random Forest Regressor
 - XGBoost Regressor
+- Gradient Boosting
+- Extra Trees
 
 ## Results
 Best model: Random Forest Regressor
