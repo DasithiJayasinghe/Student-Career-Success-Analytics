@@ -71,6 +71,10 @@ Evaluation Metrics:
 - MAE
 - RMSE
 
+## Deployment Notes
+This project has deployed using streamlit 
+- https://student-career-success-analytics-mkkrbbpgxhyd9kbz4nzknn.streamlit.app/
+  
 ## Future Improvements
 - Hyperparameter tuning
 - Streamlit deployment
