@@ -26,22 +26,23 @@ This project predicts salary packages (LPA) of engineering graduates using acade
 
 ## Models Evaluated
                           
-1.Linear Regression	           
+- Linear Regression	           
 R² Score - 0.673	
 RMSE - 2.020
 
-2.Gradient Boosting          	
+- Gradient Boosting          	
 R² Score - 0.663	
 RMSE - 2.047
 
-3.XGBoost	                     
+- XGBoost	                     
 R² Score - 0.659	
 RMSE - 2.060
 
-4.Extra Trees	
-R² Score - 0.644	2.104
+- Extra Trees	
+R² Score - 0.644
+RMSE - 2.104
 
-Random Forest	
+- Random Forest	
 R² Score - 0.640	
 RMSE - 2.116
 
