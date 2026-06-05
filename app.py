@@ -21,20 +21,29 @@ with st.form("salary_prediction_form"):
     col1, col2 = st.columns(2)
     
     with col1:
-        cgpa = st.slider("CGPA", 0.0, 10.0, 7.5, step=0.1)
-        college_tier = st.selectbox("College Tier", [1, 2, 3], index=0)
+        cgpa = st.slider("CGPA", 0.0, 10.0, 7.5, step=0.1, 
+            help="Cumulative Grade Point Average - Your overall academic performance (0-10 scale)")
+        college_tier = st.selectbox("College Tier", [1, 2, 3], index=0,
+            help="College ranking category - 1: Top tier, 2: Mid tier, 3: Other tier")
         branch = st.selectbox("Branch", 
             ["Computer Science", "Information Technology", "Electronics", 
-             "Mechanical", "Civil"], index=0)
-        gender = st.selectbox("Gender", ["Male", "Female", "Other"], index=0)
+             "Mechanical", "Civil"], index=0,
+            help="Your engineering branch/specialization")
+        gender = st.selectbox("Gender", ["Male", "Female", "Other"], index=0,
+            help="Your gender identity")
     
     with col2:
-        internships = st.number_input("Internships Completed", min_value=0, max_value=10, value=1)
-        github_repos = st.number_input("GitHub Repositories", min_value=0, max_value=100, value=5)
-        ai_ml_projects = st.number_input("AI/ML Projects", min_value=0, max_value=50, value=2)
-        resume_score = st.slider("Resume Score", 0.0, 10.0, 7.0, step=0.1)
+        internships = st.number_input("Internships Completed", min_value=0, max_value=10, value=1,
+            help="Total number of internships you have completed during your college years")
+        github_repos = st.number_input("GitHub Repositories", min_value=0, max_value=100, value=5,
+            help="Number of projects/repositories on your GitHub profile")
+        ai_ml_projects = st.number_input("AI/ML Projects", min_value=0, max_value=50, value=2,
+            help="Number of Artificial Intelligence and Machine Learning projects you have worked on")
+        resume_score = st.slider("Resume Score", 0.0, 10.0, 7.0, step=0.1,
+            help="Quality rating of your resume (0-10 scale) based on structure, content, and presentation")
     
-    communication_skills = st.slider("Communication Skills", 1, 10, 7, step=1)
+    communication_skills = st.slider("Communication Skills", 1, 10, 7, step=1,
+        help="Your proficiency in verbal and written communication (1-10 scale)")
     
     submit_button = st.form_submit_button("🚀 Predict Salary")
 
