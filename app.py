@@ -1,6 +1,16 @@
 import streamlit as st
+import pickle
+
+# Load model
+with open('models/salary_prediction_model.pkl', 'rb') as file:
+    model = pickle.load(file)
+
+with open('models/model_features.pkl', 'rb') as file:
+    features = pickle.load(file)
 
 st.title("Student Salary Prediction System")
+
+st.success("Model Loaded Successfully")
 
 st.write(
 "Predict expected salary package based on student profile."
