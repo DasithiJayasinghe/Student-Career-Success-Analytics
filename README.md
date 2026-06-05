@@ -34,6 +34,7 @@ This project analyzes factors influencing student career success and predicts ex
 
 ## Results
 Best model: Random Forest Regressor
+Academic performance (CGPA), college tier, internship experience, and AI/ML project exposure were identified as the strongest predictors of salary packages among placed engineering students.
 Evaluation Metrics:
 - R² Score
 - MAE
