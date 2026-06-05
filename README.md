@@ -1,21 +1,55 @@
 # Student Career Success Analytics and Salary Prediction
 
 ## Overview
-This project analyzes factors influencing student career success and predicts expected salary packages using machine learning techniques.
+This project predicts salary packages (LPA) of engineering graduates using academic performance, technical skills, internship experience, project work, and career development indicator.
 
 ## Dataset
 - 25,000+ student records
-- Academic performance
-- Coding skills
-- Internship experience
-- AI readiness
-- Behavioral and lifestyle metrics
+- Engineering students from Tier 1, Tier 2, and Tier 3 colleges
+- Features include:
+       - CGPA
+       - Internships
+       - GitHub activity
+       - DSA problem-solving
+       - AI/ML projects
+       - Resume score
+       - Communication skills
+       - Self-learning habits
 
-## Objectives
-- Perform exploratory data analysis
-- Identify salary-driving factors
-- Build salary prediction models
-- Evaluate model performance
+## Project Workflow
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Model Training
+- Model Evaluation
+- Model Deployment Preparation
+
+## Models Evaluated
+                          
+1.Linear Regression	           
+R² Score - 0.673	
+RMSE - 2.020
+
+2.Gradient Boosting          	
+R² Score - 0.663	
+RMSE - 2.047
+
+3.XGBoost	                     
+R² Score - 0.659	
+RMSE - 2.060
+
+4.Extra Trees	
+R² Score - 0.644	2.104
+
+Random Forest	
+R² Score - 0.640	
+RMSE - 2.116
+
+## Key Findings
+- CGPA was the strongest predictor of salary.
+- Internship experience significantly influenced salary outcomes.
+- AI/ML project experience positively impacted salary predictions.
+- Students from higher-tier colleges tended to receive higher salary packages.
 
 ## Technologies Used
 - Python
@@ -24,13 +58,9 @@ This project analyzes factors influencing student career success and predicts ex
 - Scikit-learn
 - Matplotlib
 - Seaborn
+- XGBoost
+- Google Colab
 
-## Models Tested
-- Linear Regression
-- Random Forest Regressor
-- XGBoost Regressor
-- Gradient Boosting
-- Extra Trees
 
 ## Results
 Best model: Random Forest Regressor
