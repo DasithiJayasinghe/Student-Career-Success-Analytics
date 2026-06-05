@@ -39,11 +39,6 @@ with st.form("salary_prediction_form"):
             help="Number of projects/repositories on your GitHub profile")
         ai_ml_projects = st.number_input("AI/ML Projects", min_value=0, max_value=50, value=2,
             help="Number of Artificial Intelligence and Machine Learning projects you have worked on")
-        resume_score = st.slider("Resume Score", 0.0, 10.0, 7.0, step=0.1,
-            help="Quality rating of your resume (0-10 scale) based on structure, content, and presentation")
-    
-    communication_skills = st.slider("Communication Skills", 1, 10, 7, step=1,
-        help="Your proficiency in verbal and written communication (1-10 scale)")
     
     submit_button = st.form_submit_button("🚀 Predict Salary")
 
@@ -58,8 +53,6 @@ if submit_button:
         'GitHub_repos': github_repos,
         'AI_ML_projects': ai_ml_projects,
         'internships_completed': internships,
-        'resume_score': resume_score,
-        'communication_skills': communication_skills,
     }
     
     # Add branch features (one-hot encoded)
@@ -96,7 +89,5 @@ if submit_button:
             'Internships': internships,
             'GitHub Repos': github_repos,
             'AI/ML Projects': ai_ml_projects,
-            'Resume Score': resume_score,
-            'Communication Skills': communication_skills
         }
         st.json(summary_data)
